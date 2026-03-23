@@ -1,6 +1,6 @@
 # 🎬 CinéScope - Explorateur de Films
 
-![CinéScope Banner](https://via.placeholder.com/1200x400/111111/e50914?text=CinéScope+%7C+Explorez+les+Films)
+![CinéScope Banner](image.png)
 
 Une application web moderne et immersive pour explorer une collection de films cultes. Design cinématique, interface responsive et fonctionnalités interactives.
 
