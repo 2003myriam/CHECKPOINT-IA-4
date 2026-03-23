@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>CinéScope - Explorateur de Films</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-film"></i>
+                <span>Ciné<span class="logo-accent">Scope</span></span>
+            </div>
+            
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="searchInput" placeholder="Rechercher un film..." class="search-input">
+            </div>
+            
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-btn" aria-label="Mode sombre/clair">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Découvrez l'Univers <span class="gradient-text">Cinématographique</span></h1>
+            <p class="hero-subtitle">Explorez notre collection de films cultes, des classiques intemporels aux chefs-d'œuvre modernes</p>
+            <button class="explore-btn" id="exploreBtn">
+                Explorer les films <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse"></div>
+        </div>
+    </section>
+
+    <!-- Films Section -->
+    <section class="films-section" id="filmsSection">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Catalogue de Films</h2>
+                <p class="section-subtitle">Découvrez notre sélection de films exceptionnels</p>
+            </div>
+            <div class="films-grid" id="filmsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="filmModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalCloseBtn">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <img id="modalImage" class="modal-image" alt="Affiche du film">
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <div class="modal-rating" id="modalRating"></div>
+                    <p id="modalDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
